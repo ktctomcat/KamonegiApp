@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">カモねぎくんアプリ</string>
-    <string name="bt_WebCamera">WEBカメラを確認する</string>
+    <string name="bt_close">戻る</string>
+    <string name="bt_webcam">WEBカメラ</string>
+    <string name="bt_info">情報</string>
+    <string name="bt_historic_site">史跡</string>
 </resources>

@@ -10,26 +10,33 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="386dp"
-        android:layout_height="456dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btWebCam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/kamonegikun_rev305_512_512" />
-
-    <Button
-        android:id="@+id/btWebCam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/bt_WebCamera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:srcCompat="@drawable/kamonegikun_rev305_512_512"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <Button
+        android:id="@+id/btWebcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_webcam"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <Button
+        android:id="@+id/btInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_info"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="604dp" />
+
+    <Button
+        android:id="@+id/btHistoricSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_historic_site"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="520dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
