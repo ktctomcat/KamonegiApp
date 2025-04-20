@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">KamonegiApps</string>
+    <string name="app_name">カモねぎくんアプリ</string>
+    <string name="bt_WebCamera">WEBカメラを確認する</string>
 </resources>
