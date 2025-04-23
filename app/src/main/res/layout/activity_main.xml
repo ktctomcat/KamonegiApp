@@ -21,22 +21,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_webcam"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="604dp" />
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="697dp" />
 
     <Button
         android:id="@+id/btInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
         android:text="@string/bt_info"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="604dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btHistoricSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bt_historic_site"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="520dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="185dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
