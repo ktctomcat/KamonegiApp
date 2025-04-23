@@ -19,7 +19,7 @@ class InfoActivity : AppCompatActivity() {
             insets
         }
 
-        val closeButton: Button = findViewById<Button>(R.id.closeButton)
+        val closeButton: Button = findViewById(R.id.closeButton)
         closeButton.setOnClickListener {
             finish()
         }

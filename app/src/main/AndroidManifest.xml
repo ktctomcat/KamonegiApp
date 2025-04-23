@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- ネットワークアクセスを許可する -->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- ネットワークアクセスを許可する -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,18 +20,14 @@
         <activity
             android:name=".WebcamActivity"
             android:exported="false" />
-
-        <!-- メインのActivityを指定  -->
+        <!-- 史跡のActivityを指定 -->
         <activity
             android:name=".HistoricSiteActivity"
             android:exported="false" />
         <!-- インフォメーションのActivityを指定 -->
         <activity
             android:name=".InfoActivity"
-            android:exported="false" /> <!-- WebカメラのActivityを指定 -->
-        <activity
-            android:name=".WebcamActivity"
-            android:exported="false" /> <!-- メインのActivityを指定 -->
+            android:exported="false" />
         <!-- メインのActivityを指定 -->
         <activity
             android:name=".MainActivity"
