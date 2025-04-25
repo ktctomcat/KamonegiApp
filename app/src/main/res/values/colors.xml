@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- オリジナル色の定義 -->
+    <color name="yellow">#FFFFFF00</color>
+    <color name="green">#FF00FF00</color>
+    <color name="darkgreen">#FF008000</color>
 </resources>

@@ -5,19 +5,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFF00"
+    android:background="@color/yellow"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="332dp"
-        android:layout_height="389dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="241dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toTopOf="@+id/btInfo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btHistoricSite"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btInfo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
@@ -27,23 +24,34 @@
         android:id="@+id/btWebcam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgreen"
         android:text="@string/bt_webcam"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="581dp" />
 
     <Button
         android:id="@+id/btInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bt_info" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/darkgreen"
+        android:text="@string/bt_info"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btHistoricSite"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btHistoricSite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgreen"
         android:text="@string/bt_historic_site"
-        tools:layout_editor_absoluteX="323dp" />
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="517dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

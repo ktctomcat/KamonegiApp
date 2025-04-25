@@ -1,6 +1,7 @@
 package io.github.ktctomcat.android.kamonegiapps
 
 import android.os.Bundle
+import android.webkit.WebView
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,12 @@ class WebcamActivity : AppCompatActivity() {
             insets
         }
 
+        // 表示するhtmlファイルの指定
+        val infoWebView: WebView = findViewById(R.id.webview)
+        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/information.html")
+        infoWebView.settings.javaScriptEnabled = true
+
+        // 戻るボタン
         val closeButton: Button = findViewById(R.id.closeButton)
         closeButton.setOnClickListener {
             finish()
