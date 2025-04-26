@@ -9,13 +9,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class InfoActivity : AppCompatActivity() {
+class GraphicActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_info)
+        setContentView(R.layout.activity_graphic)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.info)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.webcam)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -23,7 +23,10 @@ class InfoActivity : AppCompatActivity() {
 
         // 表示するhtmlファイルの指定
         val infoWebView: WebView = findViewById(R.id.webview)
+        // JavaScriptを有効にする
         infoWebView.settings.javaScriptEnabled = true
+        // htmlファイルの指定
+        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/graphic.html")
         // スタイルの設定
         infoWebView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView?, url: String?) {
@@ -34,7 +37,6 @@ class InfoActivity : AppCompatActivity() {
                 ) { }
             }
         }
-        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/information.html")
 
         // 戻るボタン
         val closeButton: Button = findViewById(R.id.closeButton)
@@ -42,5 +44,4 @@ class InfoActivity : AppCompatActivity() {
             finish()
         }
     }
-
 }

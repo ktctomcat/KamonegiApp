@@ -36,17 +36,17 @@ class MainActivity : AppCompatActivity() {
         override fun onClick(view: View) {
             when (view.id) {
                 R.id.btInfo -> {
-                    val intent = Intent(this@MainActivity, InfoActivity::class.java)
+                    val intent = Intent(this@MainActivity, InformationActivity::class.java)
                     startActivity(intent)
                 }
 
                 R.id.btHistoricSite -> {
-                    val intent = Intent(this@MainActivity, HistoricSiteActivity::class.java)
+                    val intent = Intent(this@MainActivity, HomeActivity::class.java)
                     startActivity(intent)
                 }
 
                 R.id.btWebcam -> {
-                    val intent = Intent(this@MainActivity, WebcamActivity::class.java)
+                    val intent = Intent(this@MainActivity, GraphicActivity::class.java)
                     startActivity(intent)
                 }
             }
