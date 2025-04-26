@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.ktctomcat.android.kamonegiapps"
+    namespace = "io.github.ktctomcat.android.kamonegiapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.ktctomcat.android.kamonegiapps"
+        applicationId = "io.github.ktctomcat.android.kamonegiapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
