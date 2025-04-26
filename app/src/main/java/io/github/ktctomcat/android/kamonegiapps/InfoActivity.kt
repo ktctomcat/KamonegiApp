@@ -2,6 +2,7 @@ package io.github.ktctomcat.android.kamonegiapps
 
 import android.os.Bundle
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,8 +23,18 @@ class InfoActivity : AppCompatActivity() {
 
         // 表示するhtmlファイルの指定
         val infoWebView: WebView = findViewById(R.id.webview)
-        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/information.html")
         infoWebView.settings.javaScriptEnabled = true
+        // スタイルの設定
+        infoWebView.webViewClient = object : WebViewClient() {
+            override fun onPageFinished(view: WebView?, url: String?) {
+                view?.evaluateJavascript(
+                    """var style = document.createElement('style');
+                        style.innerHTML = ".header, .gnav, .footer { display: none; }";
+                        document.head.appendChild(style);"""
+                ) { }
+            }
+        }
+        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/information.html")
 
         // 戻るボタン
         val closeButton: Button = findViewById(R.id.closeButton)
