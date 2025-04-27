@@ -32,7 +32,7 @@ class InformationActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 view?.evaluateJavascript(
                     """var style = document.createElement('style');
-                        style.innerHTML = ".header, .gnav, .footer { display: none; } body { background-color: #ffff00; } .main { background-image: none; }";
+                        style.innerHTML = ".header, .navigate, .footer { display: none; } body { background-color: #ffff00; } .main { background-image: none; }";
                         document.head.appendChild(style);"""
                 ) { }
             }
