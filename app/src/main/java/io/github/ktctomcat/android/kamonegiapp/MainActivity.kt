@@ -22,13 +22,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btInfo = findViewById<Button>(R.id.btInfo)
-        val btHistoricSite = findViewById<Button>(R.id.btHistoricSite)
-        val btWebcam = findViewById<Button>(R.id.btWebcam)
+        val btNotice = findViewById<Button>(R.id.btNotice)
+        val btGraphic = findViewById<Button>(R.id.btGraphic)
 
         val listener = ClickListener()
         btInfo.setOnClickListener(listener)
-        btHistoricSite.setOnClickListener(listener)
-        btWebcam.setOnClickListener(listener)
+        btNotice.setOnClickListener(listener)
+        btGraphic.setOnClickListener(listener)
     }
 
 
@@ -36,16 +36,16 @@ class MainActivity : AppCompatActivity() {
         override fun onClick(view: View) {
             when (view.id) {
                 R.id.btInfo -> {
-                    val intent = Intent(this@MainActivity, InformationActivity::class.java)
+                    val intent = Intent(this@MainActivity, InfoActivity::class.java)
                     startActivity(intent)
                 }
 
-                R.id.btHistoricSite -> {
-                    val intent = Intent(this@MainActivity, HomeActivity::class.java)
+                R.id.btNotice -> {
+                    val intent = Intent(this@MainActivity, NoticeActivity::class.java)
                     startActivity(intent)
                 }
 
-                R.id.btWebcam -> {
+                R.id.btGraphic -> {
                     val intent = Intent(this@MainActivity, GraphicActivity::class.java)
                     startActivity(intent)
                 }

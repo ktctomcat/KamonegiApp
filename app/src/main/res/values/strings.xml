@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">カモねぎくんアプリ</string>
     <string name="bt_close">戻る</string>
-    <string name="bt_home">ホーム</string>
-    <string name="bt_infomation">情報館</string>
+    <string name="bt_notice">お知らせ</string>
+    <string name="bt_info">情報館</string>
     <string name="bt_graphic">画像館</string>
 </resources>

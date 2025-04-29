@@ -22,11 +22,11 @@
             android:exported="false" />
         <!-- ホームのActivityを指定 -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".NoticeActivity"
             android:exported="false" />
         <!-- 情報館のActivityを指定 -->
         <activity
-            android:name=".InformationActivity"
+            android:name=".InfoActivity"
             android:exported="false" />
         <!-- メインのActivityを指定 -->
         <activity

@@ -9,34 +9,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class HomeActivity : AppCompatActivity() {
+class InfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_info)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.historic_site)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.info)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         // 表示するhtmlファイルの指定
-        val infoWebView: WebView = findViewById(R.id.webview)
+        val webView: WebView = findViewById(R.id.webView)
         // JavaScriptを有効にする
-        infoWebView.settings.javaScriptEnabled = true
+        webView.settings.javaScriptEnabled = true
         // htmlファイルの指定
-        infoWebView.loadUrl("https://ktctomcat.github.io/kamonegi/index.html")
-        // スタイルの設定
-        infoWebView.webViewClient = object : WebViewClient() {
-            override fun onPageFinished(view: WebView?, url: String?) {
-                view?.evaluateJavascript(
-                    """var style = document.createElement('style');
-                        style.innerHTML = ".header, .gnav, .footer { display: none; }";
-                        document.head.appendChild(style);"""
-                ) { }
-            }
-        }
+        webView.loadUrl("https://ktctomcat.github.io/kamonegi/index.html")
 
         // 戻るボタン
         val closeButton: Button = findViewById(R.id.closeButton)
@@ -44,4 +34,5 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }

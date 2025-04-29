@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btWebcam"
+        android:id="@+id/btGraphic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btHistoricSite" />
+        app:layout_constraintStart_toEndOf="@+id/btNotice" />
 
     <Button
         android:id="@+id/btInfo"
@@ -29,26 +29,26 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/darkgreen"
-        android:text="@string/bt_infomation"
+        android:text="@string/bt_info"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btHistoricSite"
+        app:layout_constraintEnd_toStartOf="@+id/btNotice"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btHistoricSite"
+        android:id="@+id/btNotice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/darkgreen"
-        android:text="@string/bt_home"
+        android:text="@string/bt_notice"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btWebcam"
+        app:layout_constraintEnd_toStartOf="@+id/btGraphic"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btInfo" />
 
@@ -60,7 +60,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btHistoricSite"
+        app:layout_constraintBottom_toTopOf="@+id/btNotice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
