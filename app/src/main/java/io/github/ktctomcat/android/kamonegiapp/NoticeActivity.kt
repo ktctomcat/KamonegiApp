@@ -27,16 +27,6 @@ class NoticeActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         // htmlファイルの指定
         webView.loadUrl("https://ktctomcat.github.io/kamonegi/index.html")
-        // スタイルの設定
-        webView.webViewClient = object : WebViewClient() {
-            override fun onPageFinished(view: WebView?, url: String?) {
-                view?.evaluateJavascript(
-                    """var style = document.createElement('style');
-                        style.innerHTML = ".header, .gnav, .footer { display: none; }";
-                        document.head.appendChild(style);"""
-                ) { }
-            }
-        }
 
         // 戻るボタン
         val closeButton: Button = findViewById(R.id.closeButton)

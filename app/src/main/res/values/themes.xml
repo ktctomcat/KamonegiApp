@@ -5,5 +5,8 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.KamonegiApp" parent="Base.Theme.KamonegiApp" />
+    <style name="Theme.KamonegiApp" parent="Base.Theme.KamonegiApp" >
+
+
+    </style>
 </resources>
